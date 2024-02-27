@@ -1,0 +1,220 @@
+
+.spacing{
+    margin: 5rem 10rem 5rem 10rem;
+}
+.sloganSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--lightText);
+    height: 100vh;
+    font-family: var(--headingFont);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.sloganDiv{
+    text-align: center;
+    background-image: url(../Component/images/homeBgVideo.mp4);
+}
+.bgVideo{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate( 0 -50%);
+    z-index: -10;
+}
+/*  */
+.sloganDiv h4{
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    font-size: var(--title4);
+}
+.sloganDiv h1{
+    font-size: var(--title0);
+}
+.sloganDiv h4:after, .sloganDiv h4:before{
+    content: "";
+    background-color: var(--primary);
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+}
+.sloganDiv h4:after{
+    right:-130%;
+}
+.sloganDiv h4:before{
+    left: -130%;
+}
+.sloganDiv .fade{
+    color: var(--fadedLight);
+}
+
+
+
+
+.aboutDiv{
+    background-image: url(../Component/images/homeAboutPoster.webp);
+    background-position: center;
+    /* margin: var(--verticalspace); */
+    /* margin: 5rem 10rem 5rem 10rem; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.aboutContent{
+    background-color: var(--lightText);
+    text-align: center;
+    padding: 2rem 10rem 20rem 10rem;
+    width: 70%;
+    height: 75%;
+    color: var(--primary);
+}
+.aboutContent h1 {
+    font-family: var(--headingFont);
+    font-size: var(--title1);
+}
+.aboutContent p {
+    font-family: var(--textFont);
+    font-size: var(--textsize);
+    margin: 20px 0;
+}
+
+
+
+
+
+.ServicesDiv{
+    display: flex;
+    /* margin: 5rem 10rem 5rem 10rem; */
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary);
+}
+.serviceHeading{
+    font-family: var(--headingFont);
+    font-size: var(--title0);
+    width: 50%;
+    font-weight: 500;
+    /* text-align: center; */
+    text-transform: uppercase;
+}
+.servicesList{
+    list-style: none;
+    position: relative;
+}
+.service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.service h3{
+    font-family: var(--headingFont);
+    font-size: var(--title2);
+    margin: 0 20px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    transition: .3s ease;
+}
+.service:hover h3{
+    border: 1px solid var(--primary);
+}
+
+.smBanner{
+    height: 60px;
+    width: 100px;
+}
+
+
+
+
+.gymSection{
+    /* margin: 5rem 10rem 5rem 10rem; */
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+.gymDiv{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.gym{
+   background-size: cover;
+   background-position: center center;
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40rem;
+    cursor: pointer;
+    position: relative;
+}
+.gym h2{
+    transform: rotate(90deg);
+    color: var(--primary);
+    font-family: var(--headingFont);
+    font-size:var(--title2);
+    transition: .3s linear;
+}
+.gym:hover h2{
+    color: var(--lightText);
+}
+.head{
+    font-family: var(--headingFont);
+    font-size: var(--title1);
+    text-align: center;
+    color: var(--lightText);
+    font-weight: 400;
+    margin-bottom: var(--horizontalspace);
+}
+.gymbtn{
+    margin-top: var(--horizontalspace);
+}
+
+
+.expertSection{
+    position: relative;
+    overflow: hidden;
+}
+.expertDiv{
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+}
+.expert{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 30px;
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    align-items:end;
+    -webkit-filter:brightness(50%); 
+  filter: brightness(50%);
+  transition: .5s ease-in;
+}
+.expert h2{
+    width: 100%;
+    height: 100%;
+    padding: 5rem 2rem 2rem 2rem;
+    color: var(--primary);
+    font-family: var(--headingFont);
+    font-size: var(--title2);
+}
+.expert:hover{
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+}
+.expert:hover h2{
+    background-image: linear-gradient(to top, var(--darkText), transparent);
+    height: auto;
+
+}

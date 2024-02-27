@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400;500;600;700;900&family=Manrope:wght@200;400;500&display=swap');
+/* font-family: 'Big Shoulders Display', sans-serif;
+font-family: 'Manrope', sans-serif; */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+  --bg: #1a1a1a;
+  --primary: #f03333;
+  --primaryFaded: #f0333375;
+  --darkText: #171717;
+  --lightText: #ffffff;
+  --fadedLight: #ffffffc2;
+  --fadedDark: #171717c2;
+  --headingFont: 'Big Shoulders Display', sans-serif;
+  --textFont: 'Manrope', sans-serif;
+  --horizontalspace:50px;
+  --verticalspace:70px;
+  --title0:135px;
+  --title1:95px;
+  --title2:55px;
+  --title3:35px;
+  --title4:25px;
+  --textsize:20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body{
+  background-color: var(--bg);
 }
-
-.App-link {
-  color: #61dafb;
+.border{
+  border: 1px solid var(--primary);
 }
+.btn{
+  font-family: var(--headingFont);
+  font-size: var(--textsize);
+  letter-spacing: 2px;
+  color: var(--fadedLight);
+  background-color: var(--primary);
+  border: none;
+  cursor: pointer;
+  transition:.3s ease-in ;
+  position: relative;
+  padding: 20px 0;
+}
+.btn .link{
+  padding: 20px 40px;
+  text-decoration:none ;
+  color: var(--fadedLight);
+  transition:.2s ease-in ;
+  font-weight: 700;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.btn:hover{
+  box-shadow: 4px 4px 0px var(--primaryFaded);
+}
+.btn:hover .link{
+  color: var(--darkText);
 }
